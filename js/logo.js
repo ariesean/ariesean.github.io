@@ -1,6 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>$("#logo_sec").html("<a href='https://ariesean.com'><section><div class='content'><canvas height='28px' width='193px' id='ariesean_logo'></canvas><div class='desc'>Never Stop Traveling</div></div></section></a>");</script>
-<script>
+$("#logo_sec").html("<a href='https://ariesean.com'><section><div class='content'><canvas height='28px' width='193px' id='ariesean_logo'></canvas><div class='desc'>Never Stop Traveling</div></div></section></a>");
 $test = setInterval(function(){ drawArieSean(2, 2); }, 25);
 $x = 1;
 $rgb = 255;
@@ -337,48 +335,3 @@ function drawArieSean($startCoordX, $startCoordY){
     clearInterval($test);
   }
 }
-</script>
-<style>
-@import url(https://fonts.googleapis.com/css?family=Jura);
-body{
-  font-family:'Jura';
-  background:#fff;
-  margin:0;
-  padding:0;
-}
-#logo_sec{
-  line-height: 1;
-}
-.desc{
-  font-size:0.8em;
-  color:#fff;
-  text-align:center;
-  text-transform:uppercase;
-  opacity:0;
-  letter-spacing:-5px;
-  animation: letterSpacing 1s ease-in-out 2.5s;
-  -webkit-animation: letterSpacing 1s ease-in-out 2.5s;
-  animation-fill-mode:forwards;
-  -webkit-animation-fill-mode:forwards;
-}
-@keyframes letterSpacing{
-  0%{
-    letter-spacing:-5px;
-    opacity:0;
-  }
-  100%{
-    letter-spacing:1px;
-    opacity:1;
-  }
-}
-@-webkit-keyframes letterSpacing{
-  0%{
-    letter-spacing:-5px;
-    opacity:0;
-  }
-  100%{
-    letter-spacing:1px;
-    opacity:1;
-  }
-}
-</style>
